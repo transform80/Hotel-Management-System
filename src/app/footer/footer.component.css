@@ -1,0 +1,16 @@
+.dark-background{
+    background: #002147;
+    color: #f3f1ec;
+}
+.light-background{
+    background: #f3f1ec;
+    color: #002147;
+}
+.row{
+    margin: 0;
+}
+.footer{
+    position: relative;
+    bottom: 0px;
+    left: 0px;
+}
