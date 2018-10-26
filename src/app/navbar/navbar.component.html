@@ -1,0 +1,29 @@
+<nav class="navbar dark-background navbar-expand-lg navbar-dark mr-auto">
+  <a class="navbar-brand vertical_center" href="#">
+    <span class="ml-2" id="ascent">
+      Hotel Management System
+    </span>
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto ">
+      <li class="nav-item active">
+        <a class="nav-link" (click)="onNavClicked(1)" routerlink="/"> <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item" (click)="onNavClicked(2)">
+        <a class="nav-link" routerlink="./events" routerLinkActive="active">Restaurant</a>
+      </li> 
+      <li class="nav-item" (click)="onNavClicked(5)">
+        <a class="nav-link" routerlink="/project" routerLinkActive="active">Booking</a>
+      </li>
+      <li class="nav-item" (click)="onNavClicked(7)">
+        <a class="nav-link">Rooms</a>
+      </li>
+      <li class="nav-item" (click)="onNavClicked(4)">
+        <a class="nav-link">Staff</a>
+      </li>
+    </ul>
+  </div>
+</nav>
