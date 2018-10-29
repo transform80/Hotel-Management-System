@@ -1,4 +1,8 @@
-<p>
-  staff works!
-  Please suggest what all should be included here
-</p>
+<div class="row">
+  <div class="col-md-4 m-0 p-0" *ngFor="let s of staff">
+    <app-employee-card></app-employee-card>
+  </div>
+</div>
+
+<!-- The way to pass parameters to the template
+<app-box-card [title]="partner.title" [body]="partner.body" [imageUrl]="partner.logoUrl"> -->

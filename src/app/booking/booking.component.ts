@@ -12,7 +12,7 @@ export class BookingComponent implements OnInit {
   public rooms: roomData[];
   public startDate: string;
   public endDate: string;
-  public type: number;
+  public roomType: number;
 
   constructor(public _dataService: DataService) { }
 
@@ -23,8 +23,8 @@ export class BookingComponent implements OnInit {
     //   })
   }
 
-  onClick() {
-    this._dataService.getRoomsData(this.startDate, this.endDate, this.type)
+  onButtonClick() {
+    this._dataService.getRoomsData(this.startDate, this.endDate,this.roomType)
       .subscribe(data => {
         this.rooms = data;
       })
