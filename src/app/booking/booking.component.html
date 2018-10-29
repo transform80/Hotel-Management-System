@@ -1,3 +1,29 @@
-<p>
-  booking works!
-</p>
+<div>
+  <div class="row">
+    <div class="col-md-3 p-3">
+      <div>
+        <input class="form-control" [(ngModel)]="startDate" name="Enter Start Date">
+      </div>
+    </div>
+    <div class="col-md-3 p-3">
+      <div>
+        <input class="form-control" [(ngModel)]="endDate" name="Enter End Date">
+      </div>
+    </div>
+    <div class="col-md-3 p-3">
+      <div>
+        <input class="form-control" [(ngModel)]="roomType" name="Enter room type">
+      </div>
+    </div>
+    <div class="col-md-3 p-3">
+      <div>
+        <button class="form-control" (click)="onButtonClick()">Show Result</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-4 m-0 p-0" *ngFor="let room of rooms">
+    <app-room-card></app-room-card>
+  </div>
+</div>

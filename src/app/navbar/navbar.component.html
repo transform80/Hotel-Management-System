@@ -4,7 +4,8 @@
       Hotel Management System
     </span>
   </a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+    aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNav">
@@ -13,16 +14,23 @@
         <a class="nav-link" (click)="onNavClicked(1)" routerlink="/"> <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item" (click)="onNavClicked(2)">
-        <a class="nav-link" routerlink="./events" routerLinkActive="active">Reservation</a>
-      </li> 
-      <li class="nav-item" (click)="onNavClicked(5)">
         <a class="nav-link" routerlink="/project" routerLinkActive="active">Rooms</a>
       </li>
-      <li class="nav-item" (click)="onNavClicked(7)">
-        <a class="nav-link">Supplies</a>
+      <li class="nav-item" (click)="onNavClicked(1)">
+        <a class="nav-link" routerlink="./events" routerLinkActive="active">Reservation</a>
+      </li>
+      <li class="nav-item" (click)="onNavClicked(3)">
+        <a class="nav-link">Employee</a>
       </li>
       <li class="nav-item" (click)="onNavClicked(4)">
-        <a class="nav-link">Staff</a>
+        <a class="nav-link">Restaurant</a>
+      </li>
+
+      <li class="nav-item" (click)="onNavClicked(5)">
+        <a class="nav-link">Supplies</a>
+      </li>
+      <li class="nav-item" (click)="onNavClicked(6)">
+        <a class="nav-link">Logout</a>
       </li>
     </ul>
   </div>
