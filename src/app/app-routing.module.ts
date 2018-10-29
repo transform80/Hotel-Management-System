@@ -8,7 +8,7 @@ import { BookingComponent } from './booking/booking.component';
 import { StaffComponent } from './staff/staff.component';
 import { InventoryComponent } from './inventory/inventory.component';
 import { RestaurantComponent } from './restaurant/restaurant.component';
-
+import { EmployeeCardComponent } from './employee-card/employee-card.component';
 
 
 const routes: Routes = [
@@ -18,7 +18,7 @@ const routes: Routes = [
     { path: 'staff', component:StaffComponent,canActivate:[AuthGuard]},
     { path: 'supplies', component:InventoryComponent,canActivate:[AuthGuard]},
     { path: 'restaurant', component:RestaurantComponent,canActivate:[AuthGuard]},
-
+    { path: 'employee_test', component:EmployeeCardComponent,canActivate:[AuthGuard]},
     
     
 
