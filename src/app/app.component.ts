@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { UserService } from './user.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  title = 'Hotel Management System';
+  public loggedIn;
+  constructor(public _userService: UserService){ 
+  }
+  ngOnInit(){
+    this.loggedIn = this._userService.getUserLoggedIn();
+  }
 }

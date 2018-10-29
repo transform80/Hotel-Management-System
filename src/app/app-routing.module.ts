@@ -10,12 +10,11 @@ import { InventoryComponent } from './inventory/inventory.component';
 import { RestaurantComponent } from './restaurant/restaurant.component';
 
 
+
 const routes: Routes = [
 
-    { path: '',  canActivate:[],component:BookingComponent},
-    { path: 'login', component:LoginComponent},
+    { path: '',  canActivate:[AuthGuard],component:BookingComponent},
     { path: 'rooms', component:RoomsComponent,canActivate:[AuthGuard]},
-    { path: 'reservation', component:BookingComponent,canActivate:[AuthGuard]},
     { path: 'staff', component:StaffComponent,canActivate:[AuthGuard]},
     { path: 'supplies', component:InventoryComponent,canActivate:[AuthGuard]},
     { path: 'restaurant', component:RestaurantComponent,canActivate:[AuthGuard]},
@@ -26,7 +25,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes,{onSameUrlNavigation: 'reload'})],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

@@ -3,12 +3,13 @@
   <script type='text/javascript' src='//platform-api.sharethis.com/js/sharethis.js#property=5b1a583e8e56ee0011c804ee&product=inline-share-buttons' async='async'></script>
 </head>
 <!--The content below is only a placeholder and can be replaced.-->
-<app-navbar></app-navbar>
-<div class="container">
-  <router-outlet></router-outlet> 
-</div>
- <!-- routed view goes here-->
-<app-footer> </app-footer>
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Nunito"/>
+
+<app-loggedin *ngIf = "loggedIn; else login"></app-loggedin>
+<ng-template #login>
+    <app-login></app-login>
+</ng-template>
+
 
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
