@@ -14,7 +14,7 @@ export class LoginComponent implements OnInit {
   public password: string;
   public loginData: any;
   public requestResponse;
-  public _verifyUrl = "";
+  public _verifyUrl = "http://vinpyt.pythonanywhere.com/check-login";
   public error: boolean;
   public errorMessage: string;
 
