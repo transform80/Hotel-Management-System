@@ -1,4 +1,6 @@
-<p>
-  inventory works!
-  Please suggest what all should be included here
-</p>
+<div class="col-md-8 mx-auto">
+  <h3>List of Supplies</h3>
+  <div *ngFor="let supply of supplies">
+    <app-supplies-card></app-supplies-card>
+  </div>
+</div>
