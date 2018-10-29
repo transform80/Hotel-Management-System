@@ -12,12 +12,12 @@ import { RestaurantComponent } from './restaurant/restaurant.component';
 
 const routes: Routes = [
 
-  { path: '',  canActivate:[],component:LoggedinComponent},
+    { path: '',  canActivate:[],component:BookingComponent},
     { path: 'login', component:LoginComponent},
     { path: 'rooms', component:RoomsComponent,canActivate:[AuthGuard]},
-    { path: 'booking', component:BookingComponent,canActivate:[AuthGuard]},
+    { path: 'reservation', component:BookingComponent,canActivate:[AuthGuard]},
     { path: 'staff', component:StaffComponent,canActivate:[AuthGuard]},
-    { path: 'inventory', component:InventoryComponent,canActivate:[AuthGuard]},
+    { path: 'supplies', component:InventoryComponent,canActivate:[AuthGuard]},
     { path: 'restaurant', component:RestaurantComponent,canActivate:[AuthGuard]},
 
     

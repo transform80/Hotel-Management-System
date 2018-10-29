@@ -12,6 +12,10 @@ import { BookingComponent } from './booking/booking.component';
 import { RestaurantComponent } from './restaurant/restaurant.component';
 import { InventoryComponent } from './inventory/inventory.component';
 import { StaffComponent } from './staff/staff.component';
+import { EmployeeCardComponent } from './employee-card/employee-card.component';
+import { RoomCardComponent } from './room-card/room-card.component';
+import { SuppliesCardComponent } from './supplies-card/supplies-card.component';
+import { RestaurantCardComponent } from './restaurant-card/restaurant-card.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +29,11 @@ import { StaffComponent } from './staff/staff.component';
     BookingComponent,
     RestaurantComponent,
     InventoryComponent,
-    StaffComponent
+    StaffComponent,
+    EmployeeCardComponent,
+    RoomCardComponent,
+    SuppliesCardComponent,
+    RestaurantCardComponent
   ],
   imports: [
     BrowserModule,
