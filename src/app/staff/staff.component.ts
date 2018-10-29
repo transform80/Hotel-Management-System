@@ -10,6 +10,8 @@ import { DataService } from '../data.service';
 export class StaffComponent implements OnInit {
 
   public staff: employeeData[];
+  public name = "Yash Dani";
+  public post = "Chef";
 
   constructor(public _dataService:DataService) { }
 

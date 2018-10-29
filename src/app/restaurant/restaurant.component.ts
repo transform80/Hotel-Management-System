@@ -17,6 +17,9 @@ export class RestaurantComponent implements OnInit {
   public orderData: any;
   public _submitOrderUrl = "";
   public requestResponse: any;
+  public room = "101";
+  public orderNumber = "112";
+  public time = "2030 hrs";
 
   constructor(public _dataService: DataService, public http: HttpClient) { }
 
