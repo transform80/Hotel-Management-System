@@ -8,7 +8,7 @@
         <div class="form-group ">
           <input type="text" class="form-control m-2" name="roomNo" style="width:150px;" [(ngModel)]="roomNo" placeholder="Room Number">
         </div>
-        <div id="orders" class="bg-light p-2" style="height:150px; overflow-y:scroll;">
+        <div id="orders" class="bg-light p-2" style="height:180px; overflow-y:scroll;">
           <div class="form-group">
               <input type="email" class="form-control d-inline" style="width:250px;" name="dishName" [(ngModel)]="dishName" placeholder="Dish Name"><span class="badge badge-info mx-2">X</span>
               <input type="text" class="form-control d-inline" style="width:150px;" name="quantity" [(ngModel)]="quantity" placeholder="Quantity">
@@ -27,7 +27,7 @@
         <button class="btn btn-danger rounded float-right ml-2" (click)="removeItem()">-</button>
         <button class="btn btn-success rounded float-right" (click)="addItem()">+</button>
       </div>
-      <button (click)="submitOrder()" class="btn btn-primary d-inline mx-auto" style="width:100px;">SUBMIT</button>
+      <button (click)="submitOrder()" class="btn btn-primary d-inline mx-auto mb-2" style="width:200px;">SUBMIT</button>
     </form>
   </div>
   <div class="col-md-6">
