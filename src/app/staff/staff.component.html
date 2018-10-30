@@ -1,13 +1,8 @@
-<div class="row">
-  <div class="col-md-4 m-0 p-0" *ngFor="let s of staff">
+<div class="d-flex flex-wrap align-content-start">
+  <div class="mx-0" *ngFor="let s of staff">
     <app-employee-card [name]= "s.emp_name" [post] = "s.emp_pos"
     [email] = "s.emp_email" [phone] = "s.emp_phone" ></app-employee-card>
-  </div>
+  </div>  
 </div>
-<div class="row">
-    <div class="col-md-4 m-0 p-0">
-      <app-employee-card [name]="name" [post]="post"></app-employee-card>
-    </div>
-  </div>
 <!-- The way to pass parameters to the template
 <app-box-card [title]="partner.title" [body]="partner.body" [imageUrl]="partner.logoUrl"> -->
