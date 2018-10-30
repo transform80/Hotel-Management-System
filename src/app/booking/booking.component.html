@@ -1,23 +1,23 @@
 <div>
-  <div class="row">
-    <div class="col-md-3 p-3">
+  <div class="row container-fluid">
+    <div class="col-md-3 p-2">
       <div>
         <input class="form-control" [(ngModel)]="startDate" name="Enter Start Date" placeholder="Starting Date DD/MM/YYYY">
       </div>
     </div>
-    <div class="col-md-3 p-3">
+    <div class="col-md-3 p-2">
       <div>
         <input class="form-control" [(ngModel)]="endDate" name="Enter End Date" placeholder="Ending Date DD/MM/YYYY">
       </div>
     </div>
-    <div class="col-md-3 p-3">
+    <div class="col-md-3 p-2">
       <div>
         <input class="form-control" [(ngModel)]="roomType" name="Enter room type" placeholder="Room Type">
       </div>
     </div>
-    <div class="col-md-3 p-3">
+    <div class="col-md-3 p-2">
       <div>
-        <button class="form-control" (click)="onButtonClick()">Show Result</button>
+        <button class="btn btn-primary px-3" (click)="onButtonClick()"><img src="assets/fontsawesome5/svgs/solid/search.svg" width="15px" alt="Search" style="color:white;"></button>
       </div>
     </div>
   </div>
