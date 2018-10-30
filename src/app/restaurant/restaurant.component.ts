@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ordersData } from '../interface/orders-data';
 import { DataService } from '../data.service';
 import { HttpClient } from '@angular/common/http';
-
+declare var $: any;
 @Component({
   selector: 'app-restaurant',
   templateUrl: './restaurant.component.html',
@@ -59,5 +59,14 @@ export class RestaurantComponent implements OnInit {
     });
 
   }
+  addItem(){
+    $("#orders").append('<div class="form-group"><input type="email" class="form-control d-inline" style="width:250px;" name="dishName" [(ngModel)]="dishName" placeholder="Dish Name"><span class="badge badge-info mx-2">X</span><input type="text" class="form-control d-inline" style="width:150px;" name="quantity" [(ngModel)]="quantity" placeholder="Quantity"></div>');
+  }
 
+  removeItem(){
+    if($("#orders").children().length == 1)
+      return;
+    
+    $("#orders").children().last().remove();
+  }
 }
