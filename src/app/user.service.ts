@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
 })
 export class UserService {
 
-  public isUserLoggedIn = 'true';
+  public isUserLoggedIn = 'false';
   public username;
 
 
@@ -26,7 +26,7 @@ export class UserService {
     return this.username;
   }
   setUserLoggedOut() {
-    localStorage.setItem('loggedIn','true');
+    localStorage.setItem('loggedIn','false');
     localStorage.removeItem('subscriberId');
   }
 }
