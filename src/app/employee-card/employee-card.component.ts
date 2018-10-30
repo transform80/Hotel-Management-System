@@ -9,6 +9,8 @@ export class EmployeeCardComponent implements OnInit {
 
   @Input() name:string;
   @Input() post:string;
+  @Input() email: string;
+  @Input() phone: string;
 
   constructor() { }
 
