@@ -9,7 +9,7 @@ export class EmployeeCardComponent implements OnInit {
 
   @Input() name:string;
   @Input() post:string;
-
+  
   constructor() { }
 
   ngOnInit() {
