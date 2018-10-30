@@ -9,10 +9,13 @@ import { suppliesData } from './interface/supply-data';
 @Injectable({
   providedIn: 'root'
 })
+
 export class DataService {
+  public _baseUrl: string = "http://vinpyt.pythonanywhere.com/";
+
   public _urlRoomList: string = "";
   public _urlOrdersList: string = "";
-  public _urlEmployeeList: string = "";
+  public _urlEmployeeList: string = this._baseUrl + "emp-details";
   public _urlSupplyList: string = "";
   public _urlRoomDetails: string = "";
 
