@@ -2,12 +2,16 @@
   <div class="row container-fluid">
     <div class="col-md-3 p-2">
       <div>
-        <input class="form-control" [(ngModel)]="startDate" name="Enter Start Date" placeholder="Starting Date DD/MM/YYYY">
+        <input [(ngModel)]="fromDay" name="Enter Start Date" placeholder="DD">
+        <input [(ngModel)]="fromMonth" name="Enter Start Date" placeholder="MM">
+        <input [(ngModel)]="fromYear" name="Enter Start Date" placeholder="YY">
       </div>
     </div>
     <div class="col-md-3 p-2">
       <div>
-        <input class="form-control" [(ngModel)]="endDate" name="Enter End Date" placeholder="Ending Date DD/MM/YYYY">
+        <input [(ngModel)]="endDay" name="Enter Start Date" placeholder="DD">
+        <input [(ngModel)]="endMonth" name="Enter Start Date" placeholder="MM">
+        <input [(ngModel)]="endYear" name="Enter Start Date" placeholder="YY">
       </div>
     </div>
     <div class="col-md-3 p-2">
