@@ -1,33 +1,49 @@
 <div>
   <div class="row container-fluid">
     <div class="col-md-3 p-2">
-      <div>
-        <input [(ngModel)]="fromDay" name="Enter Start Date" placeholder="DD">
-        <input [(ngModel)]="fromMonth" name="Enter Start Date" placeholder="MM">
-        <input [(ngModel)]="fromYear" name="Enter Start Date" placeholder="YY">
+      <div class="form-group">
+        <label for="fromDay">Check-in Date</label>
+        <input class="form-control" [(ngModel)]="fromDay" name="fromDay" placeholder="DD/MM/YYYY">
       </div>
     </div>
     <div class="col-md-3 p-2">
-      <div>
-        <input [(ngModel)]="endDay" name="Enter Start Date" placeholder="DD">
-        <input [(ngModel)]="endMonth" name="Enter Start Date" placeholder="MM">
-        <input [(ngModel)]="endYear" name="Enter Start Date" placeholder="YY">
+      <div class="form-group">
+        <label for="endDay">Check-out Date</label>
+        <input class="form-control" [(ngModel)]="endDay" name="endDay" placeholder="DD/MM/YYYY">
       </div>
     </div>
     <div class="col-md-3 p-2">
-      <div>
-        <input class="form-control" [(ngModel)]="roomType" name="Enter room type" placeholder="Room Type">
+      <div class="form-group">
+        <label for="roomType">Room Type</label>
+        <input class="form-control" [(ngModel)]="roomType" name="roomType" placeholder="Room Type">
       </div>
     </div>
     <div class="col-md-3 p-2">
-      <div>
-        <button class="btn btn-primary px-3" (click)="onButtonClick()"><img src="assets/fontsawesome5/svgs/solid/search.svg" width="15px" alt="Search" style="color:white;"></button>
+      <div class="form-group">
+        <br>
+        <button class="btn btn-primary px-3 mt-2" (click)="onButtonClick()"><img src="assets/fontsawesome5/svgs/solid/search.svg" width="15px" alt="Search" style="color:white;"></button>
       </div>
     </div>
   </div>
 </div>
-<div class="row">
-  <div class="col-md-4 m-0 p-0" *ngFor="let room of rooms">
+<div class="container d-flex flex-wrap align-content-start">
+  <div class="m-1" *ngFor="let room of rooms">
+      <app-room-card></app-room-card>
+  </div>  
+  <div class="m-2">
     <app-room-card></app-room-card>
-  </div>
+  </div>  
+  <div class="m-2">
+    <app-room-card></app-room-card>
+  </div>  
+  <div class="m-2">
+    <app-room-card></app-room-card>
+  </div>  
+  <div class="m-2">
+    <app-room-card></app-room-card>
+  </div>  
 </div>
+<br>
+<br>
+<br>
+<br>
