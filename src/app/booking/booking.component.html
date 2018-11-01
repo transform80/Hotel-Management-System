@@ -30,7 +30,7 @@
 <div class="container d-flex flex-wrap align-content-start">
   <div class="m-1" *ngFor="let room of rooms">
     <app-room-card [cost]="room.default_price" [roomNum]="room.num" [type]="room.type" [capacity]="room.num_ppl"
-      [occcupied]="room.occcupied" [startDate]="fromDay" [endDate]="endDay"></app-room-card>
+      [startDate]="fromDay" [endDate]="endDay"></app-room-card>
   </div>
   <div class="m-2">
     <app-room-card></app-room-card>
