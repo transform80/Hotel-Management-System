@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Inject } from '@angular/core';
+import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material';
+
 
 @Component({
   selector: 'app-book-dialog',
@@ -7,9 +9,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BookDialogComponent implements OnInit {
 
-  constructor() { }
+  constructor(public dialogRef: MatDialogRef<BookDialogComponent>,@Inject (MAT_DIALOG_DATA) public data: any) { }
 
   ngOnInit() {
+    console.log(this.data);
   }
 
 }
