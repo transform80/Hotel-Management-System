@@ -3,12 +3,12 @@
   <form class="card-body">
     <div class="form-group">
       <label for="cust_name">Customer Name</label>
-      <input class="form-control" type="text" name="cust_name" id="cust_name">
+      <input class="form-control" type="text" name="cust_name" id="cust_name" [ngModel] = "username">
     </div>
     <div class="form-group">
       <label for="payment_method">Mode Of Payment</label>
-      <input class="form-control" type="text" name="payment_method" id="payment_method" placeholder="Credit Card, Cash, Online, etc...">
+      <input class="form-control" type="text" name="payment_method" id="payment_method" placeholder="Credit Card, Cash, Online, etc..." [ngModel] = "paymentMethod">
     </div>
-    <button class="btn btn-success d-block btn-lg px-4 mx-auto">Confirm Booking</button>
+    <button (click)="book()" class="btn btn-success d-block btn-lg px-4 mx-auto">Confirm Booking</button>
   </form>
 </div>
