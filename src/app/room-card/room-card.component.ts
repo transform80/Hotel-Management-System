@@ -1,4 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { MatDialog } from '@angular/material';
+import { BookDialogComponent } from '../book-dialog/book-dialog.component';
 
 @Component({
   selector: 'app-room-card',
@@ -16,9 +18,26 @@ export class RoomCardComponent implements OnInit {
   @Input() endDate: string;
 
 
-  constructor() { }
+  constructor(public _dialog: MatDialog)
+ { }
 
   ngOnInit() {
+
+  }
+
+  openBook(){
+    let dialogRefShare = this._dialog.open(BookDialogComponent, {
+      width: '600px',
+      data: {
+        roomNum: this.roomNum,
+        type: this.type,
+        capacity: this.capacity,
+        startDate: this.startDate,
+        endDate: this.endDate,
+        cost:this.cost
+      }
+    })
+
   }
 
 }

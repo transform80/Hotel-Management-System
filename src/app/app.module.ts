@@ -2,6 +2,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import {MatDialogModule} from '@angular/material/dialog';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 
 
@@ -46,9 +49,14 @@ import { BookDialogComponent } from './book-dialog/book-dialog.component';
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
+    MatDialogModule,
+    BrowserAnimationsModule,
+
 
   ],
   providers: [],
+
+  entryComponents:[BookDialogComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
