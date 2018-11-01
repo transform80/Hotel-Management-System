@@ -20,6 +20,7 @@ import { EmployeeCardComponent } from './employee-card/employee-card.component';
 import { RoomCardComponent } from './room-card/room-card.component';
 import { SuppliesCardComponent } from './supplies-card/supplies-card.component';
 import { RestaurantCardComponent } from './restaurant-card/restaurant-card.component';
+import { BookDialogComponent } from './book-dialog/book-dialog.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { RestaurantCardComponent } from './restaurant-card/restaurant-card.compo
     EmployeeCardComponent,
     RoomCardComponent,
     SuppliesCardComponent,
-    RestaurantCardComponent
+    RestaurantCardComponent,
+    BookDialogComponent
   ],
   imports: [
     BrowserModule,

@@ -21,27 +21,29 @@
     <div class="col-md-3 p-2">
       <div class="form-group">
         <br>
-        <button class="btn btn-primary px-3 mt-2" (click)="onButtonClick()"><img src="assets/fontsawesome5/svgs/solid/search.svg" width="15px" alt="Search" style="color:white;"></button>
+        <button class="btn btn-primary px-3 mt-2" (click)="onButtonClick()"><img src="assets/fontsawesome5/svgs/solid/search.svg"
+            width="15px" alt="Search" style="color:white;"></button>
       </div>
     </div>
   </div>
 </div>
 <div class="container d-flex flex-wrap align-content-start">
   <div class="m-1" *ngFor="let room of rooms">
-      <app-room-card></app-room-card>
-  </div>  
+    <app-room-card [cost]="room.default_price" [roomNum]="room.num" [type]="room.type" [capacity]="room.num_ppl"
+      [occcupied]="room.occcupied" [startDate]="fromDay" [endDate]="endDay"></app-room-card>
+  </div>
   <div class="m-2">
     <app-room-card></app-room-card>
-  </div>  
+  </div>
   <div class="m-2">
     <app-room-card></app-room-card>
-  </div>  
+  </div>
   <div class="m-2">
     <app-room-card></app-room-card>
-  </div>  
+  </div>
   <div class="m-2">
     <app-room-card></app-room-card>
-  </div>  
+  </div>
 </div>
 <br>
 <br>

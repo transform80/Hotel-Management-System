@@ -21,6 +21,7 @@ export class BookingComponent implements OnInit {
   public data:any;
   
   public requestResponse;
+  public response:roomData;
   public _roomsUrl = "http://vinpyt.pythonanywhere.com/room-check";
   public _roomsUrl1 = "http://192.168.43.236:5000/room-check";
 
@@ -48,6 +49,7 @@ export class BookingComponent implements OnInit {
     this.http.post(this._roomsUrl, body).subscribe(data => {
       console.log(data);
       this.requestResponse = data;
+      this.rooms = this.requestResponse;
       console.log("Response:" + this.requestResponse);
       if (this.requestResponse) {        
       }
