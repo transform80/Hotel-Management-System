@@ -3,13 +3,13 @@
     <div class="col-md-3 p-2">
       <div class="form-group">
         <label for="fromDay">Check-in Date</label>
-        <input class="form-control" [(ngModel)]="fromDay" name="fromDay" placeholder="DD/MM/YYYY">
+        <input class="form-control" [(ngModel)]="fromDate" name="fromDay" placeholder="DD/MM/YYYY">
       </div>
     </div>
     <div class="col-md-3 p-2">
       <div class="form-group">
         <label for="endDay">Check-out Date</label>
-        <input class="form-control" [(ngModel)]="endDay" name="endDay" placeholder="DD/MM/YYYY">
+        <input class="form-control" [(ngModel)]="endDate" name="endDay" placeholder="DD/MM/YYYY">
       </div>
     </div>
     <div class="col-md-3 p-2">
@@ -30,7 +30,7 @@
 <div class="container d-flex flex-wrap align-content-start">
   <div class="m-1" *ngFor="let room of rooms">
     <app-room-card [cost]="room.default_price" [roomNum]="room.num" [type]="room.type" [capacity]="room.num_ppl"
-      [occcupied]="room.occcupied" [startDate]="fromDay" [endDate]="endDay"></app-room-card>
+      [occupied]="room.occcupied" [startDate]="fromDate" [endDate]="endDate"></app-room-card>
   </div>
   <div class="m-2">
     <app-room-card></app-room-card>

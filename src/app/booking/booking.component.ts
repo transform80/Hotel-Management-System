@@ -11,6 +11,8 @@ import { HttpClient } from '@angular/common/http';
 export class BookingComponent implements OnInit {
 
   public rooms: roomData[];
+  public fromDate: string;
+  public endDate: string;
   public fromDay: string;
   public fromMonth: string;
   public fromYear: string;
@@ -34,13 +36,16 @@ export class BookingComponent implements OnInit {
     //   })
   }
   onButtonClick() {
+    let sDate = this.fromDate.split('/');
+    let tDate = this.endDate.split('/');
+
     this.data = {
-      fromDateDay: this.fromDay,
-      fromDateMonth: this.fromMonth,
-      fromDateYear: this.fromYear,
-      toDateDay: this.endDay,
-      toDateMonth: this.endMonth,
-      toDateYear: this.endYear,
+      fromDateDay: sDate[0],
+      fromDateMonth: sDate[1],
+      fromDateYear: sDate[2],
+      toDateDay: tDate[0],
+      toDateMonth: tDate[1],
+      toDateYear: tDate[2],
       type: this.roomType
     }
     console.log(this.data);
