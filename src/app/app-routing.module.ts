@@ -11,7 +11,7 @@ import { RestaurantComponent } from './restaurant/restaurant.component';
 import { EmployeeCardComponent } from './employee-card/employee-card.component';
 import { RestaurantCardComponent } from './restaurant-card/restaurant-card.component';
 import { SuppliesCardComponent } from './supplies-card/supplies-card.component';
-
+import {BookDialogComponent} from './book-dialog/book-dialog.component';
 
 const routes: Routes = [
 
@@ -23,6 +23,7 @@ const routes: Routes = [
     { path: 'employee_test', component:EmployeeCardComponent,canActivate:[AuthGuard]},
     { path: 'restaurant_card_test', component:RestaurantCardComponent,canActivate:[AuthGuard]},
     { path: 'supplies_card_test', component:SuppliesCardComponent,canActivate:[AuthGuard]},
+    { path: 'book_form_test', component:BookDialogComponent,canActivate:[AuthGuard]},
     
     
 
